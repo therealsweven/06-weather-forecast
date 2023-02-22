@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./Assets/style.css" />
+  </head>
+  <body>
+    <header class="container-fluid text-center">
+      <h1>Los Cuatro Amigos Weather Inc.</h1>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <section id="sidebar" class="col col-xs-12 col-sm-3 col-md-3">
+          <form id="search-form" class="form-inline">
+            <p>Enter a city and click search:</p>
+            <input id="userCity" type="text" value="Ex:  Denver" />
+            <button
+              id="searchBtn"
+              type="button"
+              class="btn btn-primary btn-lg btn-info"
+            >
+              Search
+            </button>
+          </form>
+        </section>
+        <main class="col-xs-12 col-sm-8 col-md-8 text-center">
+          <div id="weatherTable" class="container-fluid pd-3">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-center">Date 1</th>
+                  <th scope="col" class="text-center">Date 2</th>
+                  <th scope="col" class="text-center">Date 3</th>
+                  <th scope="col" class="text-center">Date 4</th>
+                  <th scope="col" class="text-center">Date 5</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <!-- <th scope="row">icons</th> -->
+                  <td>icon</td>
+                  <td>icon</td>
+                  <td>icon</td>
+                  <td>icon</td>
+                  <td>icon</td>
+                </tr>
+                <tr>
+                  <!-- <th scope="row">Temps</th> -->
+                  <td>Temp</td>
+                  <td>Temp</td>
+                  <td>Temp</td>
+                  <td>Temp</td>
+                  <td>Temp</td>
+                </tr>
+                <tr>
+                  <td>Wind</td>
+                  <td>Wind</td>
+                  <td>Wind</td>
+                  <td>Wind</td>
+                  <td>Wind</td>
+                </tr>
+                <tr>
+                  <td>Humidity</td>
+                  <td>Humidity</td>
+                  <td>Humidity</td>
+                  <td>Humidity</td>
+                  <td>Humidity</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <main class="container-fluid text-center">
+      <div id="weatherTable" class="container"></div>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./Assets/script.js"></script>
+  </body>
+</html>
